@@ -30,3 +30,13 @@ vim file.txt -c "e ++enc=GB2312"
 
 向后移动半屏和向前移动半屏
 
+# 键位映射
+
+1. nnoremap - $
+
+inoremap is meant for insert mode mappings
+-表示跳转到行尾
+
+# 自动补全
+
+1. 

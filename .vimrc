@@ -18,6 +18,8 @@ colo JumMac
 " autocmd VimEnter * NERDTree
 syntax on
 nmap <silent><F3> :exec("NERDTree ".expand('%:h'))<CR>
+nnoremap - $
+nnoremap - $
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
