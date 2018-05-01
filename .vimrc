@@ -13,6 +13,7 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 
 let skip_defaults_vim=1
 set nu
+set ts=4
 set sw=4
 colo JumMac
 " autocmd VimEnter * NERDTree
