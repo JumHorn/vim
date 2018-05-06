@@ -20,7 +20,6 @@ colo JumMac
 syntax on
 nmap <silent><F3> :exec("NERDTree ".expand('%:h'))<CR>
 nnoremap - $
-nnoremap - $
 set nocompatible              " be iMproved, required
 filetype off                  " required
 

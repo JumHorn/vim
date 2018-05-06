@@ -39,4 +39,9 @@ inoremap is meant for insert mode mappings
 
 # 自动补全
 
-1. 
+1.YouCompleteMe 
+
+# 更新文件
+
+当文件内容改变时，更新文件内容
+:e
