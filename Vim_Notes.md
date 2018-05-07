@@ -34,7 +34,7 @@ vim file.txt -c "e ++enc=GB2312"
 
 1. nnoremap - $
 
-inoremap is meant for insert mode mappings
+inoremap is meant for insert mode mappings   
 -表示跳转到行尾
 
 # 自动补全
@@ -43,5 +43,14 @@ inoremap is meant for insert mode mappings
 
 # 更新文件
 
-当文件内容改变时，更新文件内容
+当文件内容改变时，更新文件内容   
 :e
+
+# 目录管理
+
+NERD tree   
+F3打开目录管理，q退出该目录   
+o打开和关闭选中的目录   
+ctrl+ww在目录和打开的文件之间切换   
+C以当前选中目录作为根目录   
+m(menu)显示文件系统菜单(esc退出)   
