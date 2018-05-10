@@ -30,6 +30,17 @@ vim file.txt -c "e ++enc=GB2312"
 
 向后移动半屏和向前移动半屏
 
+# 分屏显示
+
+1. 水平分屏
+
+:sp filepath（split）
+
+2. 垂直分屏
+
+:vsp filepath （vertical split）
+
+
 # 键位映射
 
 1. nnoremap - $
