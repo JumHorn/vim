@@ -13,14 +13,18 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 
 let skip_defaults_vim=1
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+
 set nu
 set ts=4
 set sw=4
 colo JumMac
 " autocmd VimEnter * NERDTree
 syntax on
+
 nmap <silent><F3> :exec("NERDTree ".expand('%:h'))<CR>
 nnoremap - $
+nnoremap <silent>gd :YcmCompleter GoTo<CR>
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
