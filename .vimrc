@@ -24,6 +24,7 @@ syntax on
 nmap <silent><F3> :exec("NERDTree ".expand('%:h'))<CR>
 nnoremap - $
 nnoremap <silent>gd :YcmCompleter GoTo<CR>
+map <F4> :YcmDiags<CR>
 
 set nocompatible              " be iMproved, required
 filetype off                  " required

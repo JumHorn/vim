@@ -5,13 +5,15 @@ all this things you can do with the website
 http://bytefluent.com/vivify/
 
 # Color type
-I like the style of visual studio however I still can't a one like that
+I like the style of visual studio however I still can't create a one like that
 
 # Vim Config
 
-* auto complete
+* auto complete(using youcompleteme)
+* gd means goto the definition of the function based on youcompleteme
+* F4 shows the syntax error checked by youcompleteme,or move cursor to the error line it will display a short error message for you
 * NERD tree view directories with F3 ,quit with q
-* jump to head of line with 0 and end of line with -
+* jump to head of line with the key 0 and end of line with the key -
 
 # installation
 
