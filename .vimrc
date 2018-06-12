@@ -17,6 +17,7 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/
 set nu
 set ts=4
 set sw=4
+" set clipboard=unnamed
 colo JumMac
 " autocmd VimEnter * NERDTree
 syntax on
@@ -25,6 +26,8 @@ nmap <silent><F3> :exec("NERDTree ".expand('%:h'))<CR>
 nnoremap - $
 nnoremap <silent>gd :YcmCompleter GoTo<CR>
 map <F4> :YcmDiags<CR>
+" for mac only
+" vmap <silent>y :'<,'> w !pbcopy<CR>
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
