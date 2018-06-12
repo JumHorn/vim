@@ -13,6 +13,7 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 
 let skip_defaults_vim=1
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 set nu
 set ts=4
@@ -27,7 +28,7 @@ nnoremap - $
 nnoremap <silent>gd :YcmCompleter GoTo<CR>
 map <F4> :YcmDiags<CR>
 " for mac only
-" vmap <silent>y :'<,'> w !pbcopy<CR>
+vmap <silent>y :'<,'> w !pbcopy<CR>
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
