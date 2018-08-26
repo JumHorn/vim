@@ -18,6 +18,9 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 set nu
 set ts=4
 set sw=4
+" set not fold when opening
+set foldmethod=syntax
+set foldlevelstart=99
 " set clipboard=unnamed
 colo JumMac
 " autocmd VimEnter * NERDTree
