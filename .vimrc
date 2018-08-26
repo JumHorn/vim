@@ -21,6 +21,9 @@ set sw=4
 " set not fold when opening
 set foldmethod=syntax
 set foldlevelstart=99
+
+set scrolloff=5
+
 " set clipboard=unnamed
 colo JumMac
 " autocmd VimEnter * NERDTree
