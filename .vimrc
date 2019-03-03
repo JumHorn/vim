@@ -5,6 +5,8 @@ set modelines=0		" CVE-2007-2438
 " remove change the following statements
 set nocompatible	" Use Vim defaults instead of 100% vi compatibility
 set backspace=2		" more powerful backspacing
+set mouse=""
+set clipboard=unnamedplus
 
 " Don't write backup file if vim is being called by "crontab -e"
 au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
