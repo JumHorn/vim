@@ -23,3 +23,10 @@ I like the style of visual studio however I still can't create a one like that
 
 * download vundle
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+* build YouCompleteMe
+https://github.com/Valloric/YouCompleteMe.git
+
+* config .ycm_extra_conf.py in .vimrc
+
+cp .ycm_extra_conf.py ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/
