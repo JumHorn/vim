@@ -30,3 +30,9 @@ https://github.com/Valloric/YouCompleteMe.git
 * config .ycm_extra_conf.py in .vimrc
 
 cp .ycm_extra_conf.py ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/
+
+# YouCompleteMe configuration for clang
+1. find clang path
+> echo | clang -v -E -x c++ -
+
+2. copy path to .ycm_extra_conf.py with isystem,path
