@@ -5,8 +5,6 @@ set modelines=0		" CVE-2007-2438
 " remove change the following statements
 set nocompatible	" Use Vim defaults instead of 100% vi compatibility
 set backspace=2		" more powerful backspacing
-set mouse=""
-set clipboard=unnamedplus
 
 " Don't write backup file if vim is being called by "crontab -e"
 au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
@@ -16,6 +14,12 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 let skip_defaults_vim=1
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_autoclose_preview_window_after_completion = 1
+
+"cpp syntax high light
+let g:cpp_class_decl_highlight = 1
+let g:cpp_concepts_highlight = 1
+let g:cpp_simple_highlight = 1
+let g:cpp_class_scope_highlight = 1
 
 set nu
 set ts=4
@@ -32,9 +36,9 @@ colo JumMac
 syntax on
 
 nmap <silent><F3> :exec("NERDTree ".expand('%:h'))<CR>
+map <F4> :YcmCompleter FixIt<CR>
 nnoremap - $
 nnoremap <silent>gd :YcmCompleter GoTo<CR>
-map <F4> :YcmDiags<CR>
 " for mac only
 vmap <silent>y :'<,'> w !pbcopy<CR>
 
