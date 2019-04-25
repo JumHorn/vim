@@ -32,7 +32,12 @@ https://github.com/Valloric/YouCompleteMe.git
 cp .ycm_extra_conf.py ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/
 
 # YouCompleteMe configuration for clang
+this step is not nessary only if your YCM doesn't complete your code
+
 1. find clang path
 > echo | clang -v -E -x c++ -
+
+gcc also the same 
+> echo | gcc -E -Wp,-v -s
 
 2. copy path to .ycm_extra_conf.py with isystem,path
