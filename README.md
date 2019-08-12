@@ -38,6 +38,6 @@ this step is not nessary only if your YCM doesn't complete your code
 > echo | clang -v -E -x c++ -
 
 gcc also the same 
-> echo | gcc -E -Wp,-v -s
+> echo | gcc -E -Wp,-v -s -
 
 2. copy path to .ycm_extra_conf.py with isystem,path
