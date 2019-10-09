@@ -39,8 +39,15 @@ nmap <silent><F3> :exec("NERDTree ".expand('%:h'))<CR>
 map <F4> :YcmCompleter FixIt<CR>
 nnoremap - $
 nnoremap <silent>gd :YcmCompleter GoTo<CR>
-" for mac only
-vmap <silent>y :'<,'> w !pbcopy<CR>
+
+" for mac only yank to clipboard with +clipboard
+if has("clipboard")
+  set clipboard=unnamed " copy to the system clipboard
+
+  if has("unnamedplus") " X11 support
+    set clipboard+=unnamedplus
+  endif
+endif
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
