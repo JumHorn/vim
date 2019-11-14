@@ -4,14 +4,14 @@
 
 分别是将当前行移动到屏幕底(bottom) 将当前行移动到中间 和 将当前行移动到顶(top)
 
-2. L M H 
+2. L M H
 
 将光标移动到当前屏幕的底端(low) 中间(middle) 和顶端(high)
 
 3. w e b
 
-w光标移动到下一个单词开始   
-e光标移动到当前单词结束处   
+w光标移动到下一个单词开始 \
+e光标移动到当前单词结束处 \
 b光标移动到当前单词开始处
 
 # 编码设置
@@ -51,23 +51,23 @@ vim file.txt -c "e ++enc=GB2312"
 
 1. nnoremap - $
 
-inoremap is meant for insert mode mappings   
+inoremap is meant for insert mode mappings \
 -表示跳转到行尾
 
 # 自动补全
 
-1.YouCompleteMe 
+1.YouCompleteMe
 
 # 更新文件
 
-当文件内容改变时，更新文件内容   
+当文件内容改变时，更新文件内容 \
 :e
 
 # 目录管理
 
-NERD tree   
-F3打开目录管理，q退出该目录   
-o打开和关闭选中的目录   
-ctrl+ww在目录和打开的文件之间切换   
-C以当前选中目录作为根目录   
-m(menu)显示文件系统菜单(esc退出)   
+NERD tree \
+F3打开目录管理，q退出该目录 \
+o打开和关闭选中的目录 \
+ctrl+ww在目录和打开的文件之间切换 \
+C以当前选中目录作为根目录 \
+m(menu)显示文件系统菜单(esc退出)

@@ -11,6 +11,17 @@ au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
 " Don't write backup file if vim is being called by "chpass"
 au BufWrite /private/etc/pw.* set nowritebackup nobackup
 
+" auot clang format when exit insert mode
+let g:clang_format#code_style='llvm'
+let g:clang_format#auto_format=1
+let g:clang_format#auto_format_on_insert_leave=1
+let g:clang_format#style_options = {
+            \ "AccessModifierOffset" : -4,
+            \ "AllowShortIfStatementsOnASingleLine" : "true",
+            \ "AlwaysBreakTemplateDeclarations" : "true",
+            \ "Standard" : "C++11",
+            \ "BreakBeforeBraces" : "Stroustrup"}
+
 let skip_defaults_vim=1
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_autoclose_preview_window_after_completion = 1
@@ -40,7 +51,7 @@ map <F4> :YcmCompleter FixIt<CR>
 nnoremap - $
 nnoremap <silent>gd :YcmCompleter GoTo<CR>
 
-" for mac only yank to clipboard with +clipboard
+" yank to clipboard
 if has("clipboard")
   set clipboard=unnamed " copy to the system clipboard
 
@@ -71,6 +82,7 @@ Plugin 'VundleVim/Vundle.vim'
 " git repos on your local machine (i.e. when working on your own plugin)
 Plugin 'scrooloose/nerdtree'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'rhysd/vim-clang-format'
 " Plugin 'vim-script/taglist.vim'
 " Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
