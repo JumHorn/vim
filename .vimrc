@@ -23,8 +23,8 @@ let g:clang_format#style_options = {
 			\ "ColumnLimit":0,
 			\ "IndentWidth" : 4,
 			\ "TabWidth" : 4, 
-			\ "UseTab":"Always",
-            \ "BreakBeforeBraces" : "Stroustrup"}
+			\ "UseTab": "Always",
+            \ "BreakBeforeBraces" : "Allman"}
 
 let skip_defaults_vim=1
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
