@@ -12,7 +12,7 @@ au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
 au BufWrite /private/etc/pw.* set nowritebackup nobackup
 
 " auot clang format when exit insert mode
-let g:clang_format#code_style='llvm'
+let g:clang_format#code_style='google'
 let g:clang_format#auto_format=1
 let g:clang_format#auto_format_on_insert_leave=1
 let g:clang_format#style_options = {
@@ -20,6 +20,9 @@ let g:clang_format#style_options = {
             \ "AllowShortIfStatementsOnASingleLine" : "true",
             \ "AlwaysBreakTemplateDeclarations" : "true",
             \ "Standard" : "C++11",
+			\ "IndentWidth" : 4,
+			\ "TabWidth" : 4, 
+			\ "UseTab":"Always",
             \ "BreakBeforeBraces" : "Stroustrup"}
 
 let skip_defaults_vim=1
