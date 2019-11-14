@@ -20,6 +20,7 @@ let g:clang_format#style_options = {
             \ "AllowShortIfStatementsOnASingleLine" : "true",
             \ "AlwaysBreakTemplateDeclarations" : "true",
             \ "Standard" : "C++11",
+			\ "ColumnLimit":0,
 			\ "IndentWidth" : 4,
 			\ "TabWidth" : 4, 
 			\ "UseTab":"Always",
