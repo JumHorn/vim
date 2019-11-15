@@ -49,8 +49,8 @@ colo JumMac
 " autocmd VimEnter * NERDTree
 syntax on
 
-autocmd FileType c imap ; ;<ESC>:ClangFormat<CR>A
-autocmd FileType cpp imap ; ;<ESC>:ClangFormat<CR>A
+" autocmd FileType c imap ; ;<ESC>:ClangFormat<CR>A
+" autocmd FileType cpp imap ; ;<ESC>:ClangFormat<CR>A
 nmap <silent><F3> :exec("NERDTree ".expand('%:h'))<CR>
 map <F4> :YcmCompleter FixIt<CR>
 nnoremap - $
@@ -76,6 +76,9 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'rhysd/vim-clang-format'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -85,9 +88,6 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
 " git repos on your local machine (i.e. when working on your own plugin)
-Plugin 'scrooloose/nerdtree'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'rhysd/vim-clang-format'
 " Plugin 'vim-script/taglist.vim'
 " Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
