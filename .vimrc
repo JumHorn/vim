@@ -14,7 +14,6 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 " auot clang format when exit insert mode
 let g:clang_format#code_style='google'
 let g:clang_format#auto_format=1
-let g:clang_format#auto_format_on_insert_leave=1
 let g:clang_format#style_options = {
             \ "AccessModifierOffset" : -4,
             \ "AllowShortIfStatementsOnASingleLine" : "true",
@@ -22,7 +21,7 @@ let g:clang_format#style_options = {
             \ "Standard" : "C++11",
 			\ "ColumnLimit":0,
 			\ "IndentWidth" : 4,
-			\ "TabWidth" : 4, 
+			\ "TabWidth" : 4,
 			\ "UseTab": "Always",
             \ "BreakBeforeBraces" : "Allman"}
 
@@ -50,6 +49,8 @@ colo JumMac
 " autocmd VimEnter * NERDTree
 syntax on
 
+autocmd FileType c imap ; ;<ESC>:ClangFormat<CR>A
+autocmd FileType cpp imap ; ;<ESC>:ClangFormat<CR>A
 nmap <silent><F3> :exec("NERDTree ".expand('%:h'))<CR>
 map <F4> :YcmCompleter FixIt<CR>
 nnoremap - $
