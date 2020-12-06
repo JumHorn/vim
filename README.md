@@ -21,25 +21,47 @@ I like the style of visual studio however I still can't create a one like that
 
 * replace .vimrc file in your home directory
 
-* download vundle
+* vundle
+```shell
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+> https://github.com/VundleVim/Vundle.vim/blob/master/README.md
+
+choose different url to speed up downloads
+```vim
+" plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+" Git plugin not hosted on GitHub
+Plugin 'https://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+Plugin 'file:///home/gmarik/path/to/plugin'
+```
 
 * build YouCompleteMe
-https://github.com/Valloric/YouCompleteMe.git
 
-* config .ycm_extra_conf.py in .vimrc
+current YouCompleteMe must be with C++17
 
-cp .ycm_extra_conf.py ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/
+~~* config .ycm_extra_conf.py in .vimrc~~
+```shell
+cp .ycm_extra_conf.py ~/.vim/
+```
+> https://github.com/ycm-core/YouCompleteMe
 
-* apt install clang-format
+~~* apt install clang-format~~
 
 # YouCompleteMe configuration for clang
 this step is not nessary only if your YCM doesn't complete your code
 
 1. find clang path
-> echo | clang -v -E -x c++ -
+* clang
+```shell
+echo | clang -v -E -x c++ -
+```
 
-gcc also the same
-> echo | gcc -E -Wp,-v -s -
+* gcc
+```shell
+echo | gcc -E -Wp,-v -s -
+```
 
-2. copy path to .ycm_extra_conf.py with isystem,path
+~~2. copy path to .ycm_extra_conf.py with isystem,path~~
