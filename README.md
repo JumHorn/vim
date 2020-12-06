@@ -14,6 +14,7 @@ I like the style of visual studio however I still can't create a one like that
 * F4 shows the syntax error checked by youcompleteme,or move cursor to the error line it will display a short error message for you
 * NERD tree view directories with F3 ,quit with q
 * jump to head of line with the key 0 and end of line with the key -
+* ctrl+/ to comment and uncomment c/c++ file type
 
 # installation
 
