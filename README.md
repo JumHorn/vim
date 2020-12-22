@@ -49,7 +49,7 @@ cp .ycm_extra_conf.py ~/.vim/
 ```
 > https://github.com/ycm-core/YouCompleteMe
 
-~~* apt install clang-format~~
+* apt install clang-format
 
 # YouCompleteMe configuration for clang
 this step is not nessary only if your YCM doesn't complete your code
