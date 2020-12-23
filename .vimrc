@@ -49,11 +49,11 @@ colo JumMac
 " autocmd VimEnter * NERDTree
 syntax on
 
-" set key bindings
-" autocmd FileType c imap ; ;<ESC>:ClangFormat<CR>A
-" autocmd FileType cpp imap ; ;<ESC>:ClangFormat<CR>A
+" set commentary
 autocmd FileType c nnoremap <expr><C-_> trim(getline('.'))[0:1] == '//' ? ":s;\s*//<cr>" : "^<insert>//<Esc>"
 autocmd FileType cpp nnoremap <expr><C-_> trim(getline('.'))[0:1] == '//' ? ":s;\s*//<cr>" : "^<insert>//<Esc>"
+
+" set key bindings
 nmap <silent><F3> :exec("NERDTree ".expand('%:h'))<CR>
 map <F4> :YcmCompleter FixIt<CR>
 nnoremap - $
