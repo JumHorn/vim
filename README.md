@@ -17,10 +17,12 @@ I like the style of visual studio however I still can't create a one like that
 * ctrl+/ to comment and uncomment c/c++ file type
 
 # installation
-
-* replace the color folder and bundle folder in .vim directory
-
-* replace .vimrc file in your home directory
+```shell
+# use this repository as .vim fold
+git clone https://github.com/JumHorn/vim.git ~/.vim
+# replace .vimrc file in your home directory
+cp ~/.vim/.vimrc ~
+```
 
 * vundle
 ```shell
@@ -45,6 +47,7 @@ current YouCompleteMe must be with C++17
 
 ~~* config .ycm_extra_conf.py in .vimrc~~
 ```shell
+cd ~/.vim/bundle/YouCompleteMe
 cp .ycm_extra_conf.py ~/.vim/
 ```
 > https://github.com/ycm-core/YouCompleteMe
@@ -52,7 +55,7 @@ cp .ycm_extra_conf.py ~/.vim/
 * apt install clang-format
 
 # YouCompleteMe configuration for clang
-this step is not nessary only if your YCM doesn't complete your code
+this step is not necessary only if your YCM doesn't complete your code
 
 1. find clang path
 * clang
