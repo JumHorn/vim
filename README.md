@@ -41,13 +41,23 @@ Plugin 'https://git.wincent.com/command-t.git'
 Plugin 'file:///home/gmarik/path/to/plugin'
 ```
 
+start download plugin
+```shell
+vim
+# esc shift+:
+PluginInstall
+```
+
 * build YouCompleteMe
 
 current YouCompleteMe must be with C++17
-
-~~* config .ycm_extra_conf.py in .vimrc~~
 ```shell
 cd ~/.vim/bundle/YouCompleteMe
+
+# compile
+./install.py --clangd-completer
+
+# copy configuration file
 cp .ycm_extra_conf.py ~/.vim/
 ```
 > https://github.com/ycm-core/YouCompleteMe
@@ -67,5 +77,3 @@ echo | clang -v -E -x c++ -
 ```shell
 echo | gcc -E -Wp,-v -s -
 ```
-
-~~2. copy path to .ycm_extra_conf.py with isystem,path~~
