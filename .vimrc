@@ -1,6 +1,12 @@
 " Configuration file for vim
 set modelines=0		" CVE-2007-2438
 
+" Uncomment the following to have Vim jump to the last position when
+" reopening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
 " Normally we use vim-extensions. If you want true vi-compatibility
 " remove change the following statements
 set nocompatible	" Use Vim defaults instead of 100% vi compatibility
@@ -11,7 +17,7 @@ au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
 " Don't write backup file if vim is being called by "chpass"
 au BufWrite /private/etc/pw.* set nowritebackup nobackup
 
-" auot clang format when exit insert mode
+" auto clang format when exit insert mode
 let g:clang_format#code_style='google'
 let g:clang_format#auto_format=1
 let g:clang_format#style_options = {
